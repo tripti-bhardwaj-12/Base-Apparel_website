@@ -1,0 +1,154 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.text {
+    height: 100%;
+    width: 28%;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.logo {
+    position: absolute;
+
+}
+
+.image {
+    width: 45%;
+}
+
+h4 {
+    letter-spacing: 10px
+}
+
+span {
+    font-size: 3em;
+    color: hsl(0, 36%, 70%);
+    font-weight: lighter;
+}
+
+p1 {
+    font-size: 3em;
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+p2 {
+    font-size: 0.8em;
+    color: hsl(0, 36%, 70%);
+    font-family: cursive;
+    display: flex;
+}
+
+
+p {
+    font-size: 3em;
+    color: hsl(0, 36%, 70%);
+    margin-top: 150px;
+    letter-spacing: 8px;
+    font-weight: lighter;
+}
+
+.form form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.form form input:first-child {
+    display: inline-block;
+    margin-top: 20px;
+    width: 60%;
+    padding: 10px 80px 11px 15px;
+    border: 2px solid hsl(0, 93%, 68%);
+    outline: none;
+    border-radius: 30px;
+    color: hsl(0, 36%, 70%);
+}
+
+.form form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: hsl(0, 36%, 70%);
+    font-size: 1em;
+    color: white;
+    top: 21px;
+    left: 258px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: gray;
+}
+
+
+@media screen and (max-width:375px) {
+    .logo {
+        position: relative;
+        right: 270px;
+        top: -15px;
+    }
+
+    .image {
+        position: absolute;
+        top: 130px;
+        height: 250px;
+        width: 374px;
+    }
+
+    .tex {
+        position: absolute;
+        top: 200px;
+        left: -300px;
+        text-align: center;
+    }
+
+    .tex p2 {
+        display: inline-block !important;
+        width: 300px;
+    }
+
+    p1 {
+        line-height: 0.9;
+    }
+
+    p {
+
+        letter-spacing: 8px;
+        line-height: 1.2;
+    }
+
+    .form form input:first-child {
+        padding: 10px 50px 19px 18px;
+        border: 1px solid hsl(0, 93%, 68%);
+    }
+
+    .form form input:last-child {
+        padding: 13px 30px;
+        border-radius: 30px;
+        top: 21px;
+        left: 270px;
+    }
+}
